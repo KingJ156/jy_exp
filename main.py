@@ -10,4 +10,8 @@ def fetch_apod(timeout: float = 6) -> dict:
 st.title("Space")
 
 ans =  fetch_apod()
-st.write(ans)
+st.write("Date:", ans["date"])
+st.write("Title:", ans["title"])
+st.write("Explanation:", ans["explanation"])
+st.write("Credit:", ans["credit"])
+st.write("Copyright:", ans["copyright"])
