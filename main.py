@@ -3,25 +3,16 @@ import requests
 
 BASE_URL = "https://science.nasa.gov/wp-json/wp/v2/apod-basic/?api_key=DEMO_KEY" 
 
-# def fetch_apod(timeout: float = 6):
-#     r = requests.get(BASE_URL, timeout=timeout)
-#     r.raise_for_status()
-#     return r.json()
+def fetch_apod(timeout: float = 6):
+    r = requests.get(BASE_URL, timeout=timeout)
+    r.raise_for_status()
+    return r.json()
 
 
 # st.title("Space")
 
-# ans = fetch_apod()
-
-# st.write(ans)
-
-def fetch_apod():
-    r = requests.get(BASE_URL)
-    return r.json()
-
-
-st.title("Space")
-
 ans = fetch_apod()
 
-st.write(ans)
+st.write("Title:", ans["title"])
+st.write("Explanation:", ans["explanation"])
+st.write("Credit:", ans["credit"])
