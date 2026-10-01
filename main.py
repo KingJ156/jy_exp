@@ -9,10 +9,14 @@ def fetch_apod(timeout: float = 6):
     return r.json()
 
 
-# st.title("Space")
+st.title("Space")
 
 ans = fetch_apod()
 
-st.write("Title:", ans["title"])
-st.write("Explanation:", ans["explanation"])
-st.write("Credit:", ans["credit"])
+
+
+apod = ans[0]
+
+st.write("Title:", apod["title"])
+st.write("Explanation:", apod["explanation"])
+st.write("Credit:", apod["credit"])
