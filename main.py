@@ -18,6 +18,8 @@ ans = fetch_apod()
 apod = ans[0]
 
 st.write("Title:", apod["title"])
+if st.button("Show Date"):
+    st.write("Date:", ans[0]["date"])
 st.write("Explanation:", apod["explanation"])
 st.write("Credit:", apod["credit"])
 st.image(apod["hdurl"])
