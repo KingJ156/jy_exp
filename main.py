@@ -1,7 +1,7 @@
 import streamlit as st 
 import requests
 
-BASE_URL = "https://science.nasa.gov/wp-json/wp/v2/apod-basic/?api_key=DEMO_KEY" 
+BASE_URL = "https://science.nasa.gov/wp-json/wp/v2/apod-basic"
 
 def fetch_apod(date, timeout: float = 6):
 
