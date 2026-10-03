@@ -20,3 +20,4 @@ apod = ans[0]
 st.write("Title:", apod["title"])
 st.write("Explanation:", apod["explanation"])
 st.write("Credit:", apod["credit"])
+st.image(apod["hdurl"])
