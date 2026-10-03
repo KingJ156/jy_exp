@@ -24,11 +24,6 @@ def fetch_apod(date, timeout: float = 6):
 
 st.title("Space")
 
-ans = fetch_apod()
-
-
-
-apod = ans[0]
 
 date = st.date_input("Date")
 
