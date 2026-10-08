@@ -37,3 +37,5 @@ if st.button("Show picture"):
     st.write("Explanation:", ans["explanation"])
 
     st.image(ans["hdurl"])
+
+st.write("https://science.nasa.gov/wp-json/wp/v2/apod-basic")
