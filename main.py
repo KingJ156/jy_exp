@@ -34,7 +34,8 @@ if st.button("Show picture"):
     ans = fetch_apod(date)
 
     st.write("Title:", ans["title"])
-    st.html("Explanation:", ans["explanation"])
+    st.write("Explanation:")
+    st.html(ans["explanation"])
 
     st.image(ans["hdurl"])
 
